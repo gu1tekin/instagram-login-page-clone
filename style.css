@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FAFAFA ;
+}
+
+ul li{
+    display: inline-block;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/* Destop User */
+@media only screen and (min-width: 600px) {
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: 4fr 1fr;
+        justify-content: center;
+        place-items: center;
+    }
+
+    .static-phone{
+        grid-column: 2;
+    }
+
+    .login-details{
+        grid-column: 3;
+    }
+
+    .footer{
+        grid-column: 1 / 5;
+    }
+
+
+}
