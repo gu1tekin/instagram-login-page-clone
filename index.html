@@ -8,6 +8,9 @@
     <!-- Custom styles CSS -->
     <link href="style.css" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
     <title>Instagram Clone</title>
   </head>
   <body>
@@ -20,12 +23,25 @@
 
       <!-- logo. login form -->
       <div class="login-details">
-        <div><img src="images/logo.png"></div>
-        <div><input type="text" name="username" id="username" placeholder="Phone number, user name, or email"></div>
-        <div><input type="password" name="password" id="password" placeholder="Password"></div>
-        <div><button>Login</button></div>
-        <div>Log in with bacebook</div>
-        <div>Forgot Password?</div>
+
+        <div id="section-login"><!-- 1st -->
+          <div class="instagram-logo"><img src="images/logo.png"></div>
+          <div><input type="text" name="username" id="username" placeholder="Phone number, user name, or email"></div>
+          <div><input type="password" name="password" id="password" placeholder="Password"></div>
+          <div><button class="login-button">Log In</button></div>
+          <div class="divider-or"> OR </div>
+          <div><a href="#"><i class="fab fa-facebook-square"></i> Log in with Facebook</a></div>
+          <div><a href="#" class="forget-password">Forgot Password?</a></div>
+        </div>
+
+        <div id="section-signup"><!-- 2nd -->
+          <div>Don not have an account? <a href="#">Sign Up</a></div>
+        </div>
+
+        <div id="">
+          <div class="get-app">Get the App</div>
+          <div><img class="app-store-logo" src="images/appleStore.png"> <img class="app-store-logo" src="images/playStore.png"></div>
+        </div>
       </div>
 
       <!-- footer -->

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:#FAFAFA ;
+    background-color: #FAFAFA ;
 }
 
 ul li{
@@ -14,12 +14,97 @@ ul li{
     text-decoration: none;
 }
 
+.get-app{
+    text-align: center;
+}
+
+.app-store-logo{
+    margin-top: 20px;
+    max-height: 40px;
+    max-width: 100%;
+}
+
+input[type=text],
+input[type=password]{
+    width: 80%;
+    padding: 5px;
+    margin: 3px;
+}
+
+#section-login{
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    background-color: white;
+}
+
+#section-signup{
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    background-color: white;
+}
+
+.login-button{
+    background-color: #0095F6;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    width: 80%;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+a{
+ text-decoration: none;
+ color:#385185 ;
+}
+
+.forget-password{
+    font-size: 12px;
+}
+
+.sign-up-link{
+    color: red !important;
+}
+
+.instagram-logo{
+    padding: 25px;
+}
+
+.divider-or {
+    display: flex;
+    align-items: center; 
+    color: #8E8E8E;
+    font-size:13px;
+  }
+  
+.divider-or::before,
+.divider-or::after {
+    content: '';
+    height: 1px;
+    background-color: #DBDBDB;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.get-app{
+    font-size:13px;
+}
+
 /* Destop User */
 @media only screen and (min-width: 600px) {
     .container{
         display: grid;
         height: 100vh;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1fr, 2fr, 2fr, 1fr);
         grid-row: 4fr 1fr;
         justify-content: center;
         place-items: center;
@@ -37,5 +122,11 @@ ul li{
         grid-column: 1 / 5;
     }
 
+}
 
+/* Destop User */
+@media only screen and (max-width: 600px) {
+    .static-phone{
+        display: none;
+    }
 }
