@@ -1,132 +1,183 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #FAFAFA ;
+ul li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 5px;
 }
 
-ul li{
-    display: inline-block;
-    padding-left: 10px;
-    text-decoration: none;
+.get-app {
+  text-align: center;
 }
 
-.get-app{
-    text-align: center;
+.app-store-logo {
+  margin-top: 20px;
+  max-height: 40px;
+  max-width: 100%;
 }
 
-.app-store-logo{
-    margin-top: 20px;
-    max-height: 40px;
-    max-width: 100%;
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 5px;
+  margin: 3px;
 }
 
-input[type=text],
-input[type=password]{
-    width: 80%;
-    padding: 5px;
-    margin: 3px;
+.login-button {
+  background-color: #0095f6;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  width: 80%;
+  border: none;
+  margin: 10px;
+  padding: 5px;
 }
 
-#section-login{
-    max-height: 100%;
-    justify-self: stretch;
-    margin-bottom: 15px;
-    border: 1px solid #DBDBDB;
-    text-align: center;
-    background-color: white;
+.log-in-with-facebook {
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
-#section-signup{
-    max-height: 100%;
-    justify-self: stretch;
-    margin-bottom: 15px;
-    border: 1px solid #DBDBDB;
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    background-color: white;
+a {
+  text-decoration: none;
+  color: #385185;
 }
 
-.login-button{
-    background-color: #0095F6;
-    text-align: center;
-    color: white;
-    border-radius: 3px;
-    width: 80%;
-    border: none;
-    margin: 10px;
-    padding: 5px;
+.forget-password {
+  font-size: 12px;
 }
 
-a{
- text-decoration: none;
- color:#385185 ;
+.sign-up-link {
+  color: red !important;
 }
 
-.forget-password{
-    font-size: 12px;
-}
-
-.sign-up-link{
-    color: red !important;
-}
-
-.instagram-logo{
-    padding: 25px;
+.instagram-logo {
+  padding: 25px;
 }
 
 .divider-or {
-    display: flex;
-    align-items: center; 
-    color: #8E8E8E;
-    font-size:13px;
-  }
-  
-.divider-or::before,
-.divider-or::after {
-    content: '';
-    height: 1px;
-    background-color: #DBDBDB;
-    flex-grow: 1;
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  color: #8e8e8e;
+  font-size: 13px;
 }
 
-.get-app{
-    font-size:13px;
+.divider-or::before,
+.divider-or::after {
+  content: "";
+  height: 1px;
+  background-color: #dbdbdb;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.get-app {
+  font-size: 13px;
 }
 
 /* Destop User */
 @media only screen and (min-width: 600px) {
-    .container{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: repeat(1fr, 2fr, 2fr, 1fr);
-        grid-row: 4fr 1fr;
-        justify-content: center;
-        place-items: center;
-    }
+  body {
+    background-color: #fafafa;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  }
 
-    .static-phone{
-        grid-column: 2;
-    }
+  #section-login {
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+  }
 
-    .login-details{
-        grid-column: 3;
-    }
+  #section-signup {
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    background-color: white;
+  }
 
-    .footer{
-        grid-column: 1 / 5;
-    }
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(1fr, 2fr, 2fr, 1fr);
+    grid-row: 4fr 1fr;
+    justify-content: center;
+    place-items: center;
+  }
 
+  .static-phone {
+    grid-column: 2;
+  }
+
+  .login-details {
+    grid-column: 3;
+  }
+
+  .footer {
+    grid-column: 1 / 5;
+    color: #878b94;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
-/* Destop User */
+/* Mobil User */
 @media only screen and (max-width: 600px) {
-    .static-phone{
-        display: none;
-    }
+  body {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  }
+
+  #section-login {
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  #section-signup {
+    max-height: 100%;
+    justify-self: stretch;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(1fr, 2fr, 2fr, 1fr);
+    grid-row: 4fr 1fr;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .static-phone {
+    display: none;
+  }
+
+  .login-details {
+    grid-column: 3;
+  }
+
+  .footer {
+    grid-column: 1 / 5;
+    color: #878b94;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
