@@ -1,6 +1,7 @@
 # instagram-login-page-clone
 
-isntagram login page clone
+instagram login page clone<br />
+<a href="https://gu1tekin.github.io/instagram-login-page-clone/">View Demo</a>
 
 ### Prerequisites
 
